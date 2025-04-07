@@ -16,9 +16,21 @@ code {
 }
 #supportHero{
   background-color: #387ed1;
+  color: white;;
+}
+#supportHero a{
+  color: white;;
 }
 #supportWrapper{
   display: flex;
   justify-content: space-between;
   margin: 0 150px;
+}
+#supportHero input{
+  padding: 20px 50px;
+  width: 100%;
+  font-size: 15px;
+  border-radius: 3px;
+  border: none;
+
 }
