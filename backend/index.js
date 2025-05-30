@@ -7,6 +7,6 @@ const uri= process.env.MONGO_URL;
 const app = express();
 
 app.listen(PORT, ()=>{
-    console.log('App Started');
+    console.log('App Stared');
     mongoose.connect(uri);
 });
