@@ -1,30 +1,53 @@
-import { Divide } from 'lucide-react';
-import React from 'react';
+import React from "react";
+
 function Hero() {
   return (
-    <section style={{
-      background: 'linear-gradient(135deg, #1e90ff 10%, #ffe082 100%)',
-      padding: '60px 0',
-      textAlign: 'center',
-      color: '#232323'
-    }}>
-      <h1 style={{fontSize: '2.5rem'}}>Invest in Your Future, Today</h1>
-      <p style={{fontSize: '1.25rem', margin: '20px 0'}}>
-        Online platform to invest in stocks, derivatives, mutual funds, ETFs, bonds, and more.
-      </p>
-      <button style={{
-        background: '#1e90ff',
-        color: '#fff',
-        padding: '12px 36px',
-        border: 'none',
-        borderRadius: '6px',
-        fontSize: '1rem',
-        cursor: 'pointer',
-        boxShadow: '0 2px 8px rgba(30,144,255,0.3)'
-      }}>Open Account</button>
+    <section
+      className="text-center py-5"
+      style={{
+        background: "linear-gradient(135deg, #1e40af 0%, #fbbf24 100%)",
+        color: "#fff",
+      }}
+    >
+      <div className="container">
+        <h1
+          className="fs-1 fw-bold mb-3"
+          style={{ maxWidth: "700px", margin: "0 auto", color: "#fff" }}
+        >
+          Invest in Your Future, Today
+        </h1>
+        <p
+          className="fs-5 mb-4"
+          style={{ maxWidth: "600px", margin: "0 auto", color: "#f0f0f0" }}
+        >
+          Online platform to invest in stocks, derivatives, mutual funds, ETFs,
+          bonds, and more.
+        </p>
+        <button
+          className="btn fs-5 fw-semibold"
+          style={{
+            background: "#fbbf24",
+            color: "#1e40af",
+            padding: "14px 40px",
+            borderRadius: "50px",
+            border: "none",
+            boxShadow: "0 4px 12px rgba(251,191,36,0.4)",
+            transition: "all 0.3s ease",
+          }}
+          onMouseOver={(e) => {
+            e.target.style.background = "#fff";
+            e.target.style.color = "#1e40af";
+          }}
+          onMouseOut={(e) => {
+            e.target.style.background = "#fbbf24";
+            e.target.style.color = "#1e40af";
+          }}
+        >
+          Open Account
+        </button>
+      </div>
     </section>
   );
 }
-
 
 export default Hero;

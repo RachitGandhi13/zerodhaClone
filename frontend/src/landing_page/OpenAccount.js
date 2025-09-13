@@ -1,14 +1,20 @@
-import react from "react";
+import React from "react";
+
 function OpenAccount() {
-    return ( 
-        <div className='container p-5 mt-5 mb-5'> 
-            <div className='row text-center'>
-                <h1 className='mt-5'>Open a Zerodha account</h1>
-                <p>Modern platforms and apps, ₹0 investments, and flat ₹20 intraday and F&O trades.</p>
-                <button className="p-2 btn btn-primary fs-5 mb-5" style={{width:"20%", margin: "0 auto"}}>Sign up for free</button>
-            </div>
-        </div>
-     );
+  return (
+    <div className="container my-5 py-5 text-center rounded-4" style={{ background: "#1e40af", color: "#fff" }}>
+      <h1 className="mt-4 mb-3 fs-1 fw-bold">Open a Zerodha Account</h1>
+      <p className="fs-5 mb-4">
+        Modern platforms and apps, ₹0 investments, and flat ₹20 intraday & F&O trades.
+      </p>
+      <button
+        className="btn btn-warning fs-5 fw-semibold"
+        style={{ borderRadius: "50px", padding: "12px 36px" }}
+      >
+        Sign Up for Free
+      </button>
+    </div>
+  );
 }
 
 export default OpenAccount;
