@@ -1,16 +1,30 @@
 import { Divide } from 'lucide-react';
 import React from 'react';
 function Hero() {
-    return ( 
-        <div className='container p-5 mt-5 mb-5'> 
-            <div className='row text-center'>
-                <img src='media/images/homeHero.png' alt='Hero Image' className='mb-5'/> 
-                <h1 className='mt-5'>Invest in Everything</h1>
-                <p>Online platform to invest in stocks, derivatives, mutual funds, ETFs, bonds, and more.</p>
-                <button className="p-2 btn btn-primary fs-5 mb-5" style={{width:"20%", margin: "0 auto"}}>Sign up for free</button>
-            </div>
-        </div>
-     );
+  return (
+    <section style={{
+      background: 'linear-gradient(135deg, #1e90ff 10%, #ffe082 100%)',
+      padding: '60px 0',
+      textAlign: 'center',
+      color: '#232323'
+    }}>
+      <h1 style={{fontSize: '2.5rem'}}>Invest in Your Future, Today</h1>
+      <p style={{fontSize: '1.25rem', margin: '20px 0'}}>
+        Online platform to invest in stocks, derivatives, mutual funds, ETFs, bonds, and more.
+      </p>
+      <button style={{
+        background: '#1e90ff',
+        color: '#fff',
+        padding: '12px 36px',
+        border: 'none',
+        borderRadius: '6px',
+        fontSize: '1rem',
+        cursor: 'pointer',
+        boxShadow: '0 2px 8px rgba(30,144,255,0.3)'
+      }}>Open Account</button>
+    </section>
+  );
 }
+
 
 export default Hero;
